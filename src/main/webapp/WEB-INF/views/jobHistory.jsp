@@ -60,6 +60,7 @@
 </table>	
 </form:form>
 <br>
+
 <h3>Job History List</h3>
 <c:if test="${!empty listJobHistories}">
 	<table class="tg">
@@ -72,7 +73,7 @@
 	<c:forEach items="${listJobHistories}" var="jobHistory">
 		<tr>
 			<td>${jobHistory.id}</td>
-			<td>${jobHistory.name}</td>
+
 			<td><a href="<c:url value='/edit/${jobHistory.id}' />" >Edit</a></td>
 			<td><a href="<c:url value='/remove/${jobHistory.id}' />" >Delete</a></td>
 		</tr>

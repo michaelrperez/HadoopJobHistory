@@ -12,7 +12,7 @@ import javax.persistence.Table;
  *
  */
 @Entity
-@Table(name="JOB_HISTORY")
+@Table(name="mr_job_history_dev")
 public class JobHistory {
 
 	@Id
@@ -20,29 +20,40 @@ public class JobHistory {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
+//	@Column(name="job_name")
+//	private String jobname;
+	
+	
+	
+	/**
+	 * @return the id
+	 */
 	public int getId() {
 		return id;
 	}
-
+	/**
+	 * @param id the id to set
+	 */
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	private String jobname;
-
-	/**
-	 * @return the jobname
-	 */
-	public String getJobname() {
-		return jobname;
-	}
-
-	/**
-	 * @param jobname the jobname to set
-	 */
-	public void setJobname(String jobname) {
-		this.jobname = jobname;
-	}
+//	/**
+//	 * @return the jobname
+//	 */
+//	public String getJobname() {
+//		return jobname;
+//	}
+//	/**
+//	 * @param jobname the jobname to set
+//	 */
+//	public void setJobname(String jobname) {
+//		this.jobname = jobname;
+//	}
+	
+	
+	
+	
+	
 	
 	
 }
